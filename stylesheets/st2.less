@@ -1,23 +1,24 @@
+@import "colors";
 .editor, .editor .gutter {
-  background-color: #1b1b1b;
-  color: #F8F8F2;
+  background-color: @bgCharcoal;
+  color: @offWhite;
 }
 
 .editor.is-focused .cursor {
-  border-color: #00f808;
+  border-color: @neonGreen;
 }
 
 .editor.is-focused .selection .region {
-  background-color: #49483E;
+  background-color: @highlightCharcoal;
 }
 
 .editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
-  background-color: #3a2777;
+  background-color: @darkPurple;
 }
 
 .meta.group.braces.curly {
-  color: #3399FF;
-  background-color: #FF44AA;
+  color: @brightBlue;
+  background-color: @pink;
 }
 
 .bracket.square {
@@ -354,6 +355,10 @@
 .meta.method.js {
   font-weight: bold;
   color: #660099;
+
+  &.period {
+    color: @offWhite;
+  }
 }
 
 .storage.type.function.js {
