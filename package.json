@@ -1,7 +1,7 @@
 {
   "name": "enlightened",
   "theme": "syntax",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "private": false,
   "description": "An enlightened syntax theme for Atom",
   "repository": "https://github.com/vincentmac/atom-enlightened",
