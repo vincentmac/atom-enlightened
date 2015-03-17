@@ -1,21 +1,23 @@
-.editor, .editor .gutter {
-  background-color: @bgCharcoal;
-  color: @offWhite;
-}
+:host, atom-text-editor {
+  &, .gutter {
+    background-color: @bgCharcoal;
+    color: @offWhite;
+  }
 
-.editor.is-focused .cursor {
-  border-color: @neonGreen;
-}
+  &.is-focused .cursor {
+    border-color: @neonGreen;
+  }
 
-.editor .selection .region {
-  background-color: @darkPurple;
-}
-.editor.is-focused .selection .region {
-  background-color: @highlight;
-}
+  .selection .region {
+    background-color: @darkPurple;
+  }
+  &.is-focused .selection .region {
+    background-color: @highlight;
+  }
 
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
-  background-color: @darkPurple;
+  &.is-focused .line-number.cursor-line-no-selection, &.is-focused .line.cursor-line {
+    background-color: @darkPurple;
+  }
 }
 
 .meta.group.braces.curly {
